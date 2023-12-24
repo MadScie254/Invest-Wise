@@ -1,0 +1,42 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "An example project using Python 3.10"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+testing = ["pytest", "hypothesis"]
+
+[project.dependencies]
+python = "3.10"
+
+[project.scripts]
+my-script = "my_project.scripts:main"
+
+[project.gui-scripts]
+my-gui-script = "my_project.gui_scripts:main"
+
+[project.dependencies]
+python = "3.10"
+requests = ">=2.25.0"
+
+[project.scripts]
+my-script = "my_project.scripts:main"
+
+[project.gui-scripts]
+my-gui-script = "my_project.gui_scripts:main"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+max-line-length = 88

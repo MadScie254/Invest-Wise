@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestWise Predictor Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .user-profile {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .summary-stats,
+        .investment-opportunities,
+        .predictions,
+        .user-preferences,
+        .recent-activity,
+        .notification-panel,
+        .historical-performance {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .quick-actions {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .feedback-section,
+        .footer {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .logout-btn {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Add your additional styles here */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>InvestWise Predictor</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Investments</a> |
+            <a href="#">Profile</a> |
+            <a href="#">Logout</a>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 user-profile">
+                <h2>User Profile</h2>
+                <!-- Include user profile details here -->
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="summary-stats">
+                            <h2>Summary Statistics</h2>
+                            <!-- Include summary statistics here -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="investment_image1.jpg" class="card-img-top" alt="Investment 1 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Opportunity 1</h5>
+                                <p class="card-text">Description of the investment opportunity.</p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="investment_image2.jpg" class="card-img-top" alt="Investment 2 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Opportunity 2</h5>
+                                <p class="card-text">Description of the investment opportunity.</p>
+                                <a href="#" class="btn btn-primary">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="predictions">
+                            <h2>Predictions and Insights</h2>
+                            <!-- Include predictions and insights here -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="user-preferences">
+                            <h2>User Preferences</h2>
+                            <!-- Include user preferences here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-actions">
+                    <button class="btn btn-primary">Make Investment</button>
+                    <button class="btn btn-secondary">View Predictions</button>
+                    <!-- Include other quick actions here -->
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="recent-activity">
+                            <h2>Recent Activity Feed</h2>
+                            <!-- Include recent activity feed here -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="notification-panel">
+                            <h2>Notification Panel</h2>
+                            <!-- Include notification panel here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="historical-performance">
+                            <h2>Historical Performance Charts</h2>
+                            <!-- Include historical performance charts here -->
+                            <div id="chart-container"></div>
+                            <div id="chart-container"></div>
+                            <div id="chart-container"></div>
+                            <div id="chart-container"></div>
+                    </div>
+
+                <div class="feedback-section">
+                    <h2>Feedback and Suggestions</h2>
+                    <!-- Include feedback and suggestions form here -->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="logout-btn">
+        <a class="btn btn-danger" href="#">Logout</a>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
